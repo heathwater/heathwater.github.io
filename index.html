@@ -57,19 +57,19 @@
     }
 
     @keyframes blink-animation {
-      to {
-        visibility: hidden;
-      }
+        to {
+            visibility: hidden;
+        }
     }
 
     @-webkit-keyframes blink-animation {
-      to {
-        visibility: hidden;
-      }
+        to {
+          visibility: hidden;
+        }
     }
 
     #colab {
-      white-space: nowrap;
+        white-space: nowrap;
     }
 
     #research {
@@ -84,6 +84,10 @@
     #research:hover {
         color: aqua;
         background-color: darkslategray;
+    }
+
+    #buttonSpan {
+        position: relative;
     }
 </style>
 
@@ -126,7 +130,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Heathwater Research</h1>
                         <p class="intro-text">Free and Premium Market Research Tools</p>
-                        <a id="colab" href="https://github.com/dibend/Colab"><span id="tri">&#9654;</span>&nbsp;<button id="research">Try Our Market Research Tools</button></a><br>
+                        <a id="colab" href="https://github.com/dibend/Colab"><span id="tri">&#9654;</span>&nbsp;<span id="buttonSpan"><button id="research">Try Our Market Research Tools</button></span></a><br>
                         <a href="index.html#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
@@ -143,6 +147,7 @@
                 <h2>About Heathwater Research</h2>
                 <p>Heathwater Research leverages the latest data science and AI technologies to create quality research tools.</p>
                 <p>Contact <a href="mailto:David@NJWebSolutions.net">David@NJWebSolutions.net</a> to access premium market research tools or have custom tools developed.</p>
+                <p>Our free research tools can be accessed from our <a href="https://github.com/dibend/Colab">GithHub Repo</a> and run free in Google Colab.</p>
             </div>
         </div>
     </section>
