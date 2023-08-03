@@ -91,6 +91,12 @@
         box-shadow: black 1rem 1rem 1rem;
         height: 100%;
     }
+
+    @media only screen and (max-width: 600px) {
+        #intro {
+            font-size: 3.5rem;
+        }
+    }
 </style>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -131,8 +137,8 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Heathwater Research</h1>
-                        <p class="intro-text">Free and Premium Investment Research Tools</p>
-                        <a id="colab" href="https://github.com/dibend/Colab"><span id="tri">&#9654;</span>&nbsp;<button id="researchButton">Try Our Market Research Tools</button></a><br>
+                        <p id="intro" class="intro-text">Free and Premium Investment Research Tools</p>
+                        <a id="colab" href="https://github.com/dibend/Colab"><button id="researchButton"><span id="tri">&#9654;</span>&nbsp;Try Our Investment Research Tools</button></a><br>
                         <a href="index.html#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
