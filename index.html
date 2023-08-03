@@ -60,6 +60,24 @@
         color: aqua;
         background-color: darkslategray;
     }
+
+    #tri {
+        color: whitesmoke;
+        animation: blink-animation 1s steps(5, start) infinite;
+        -webkit-animation: blink-animation 1s steps(5, start) infinite;
+    }
+
+    @keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
+    
+    @-webkit-keyframes blink-animation {
+      to {
+        visibility: hidden;
+      }
+    }
 </style>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -101,7 +119,7 @@
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Heathwater Research</h1>
                         <p class="intro-text">Free and Premium Market Research</p>
-                        <a href="https://github.com/dibend/Colab"><button id="research">Our Free Research and Research Tools</button></a><br>
+                        <a href="https://github.com/dibend/Colab"><span id="tri">&#9654;</span>&nbsp;<button id="research">Our Free Research and Research Tools</button></a><br>
                         <a href="index.html#about" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
