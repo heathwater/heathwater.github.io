@@ -107,6 +107,20 @@
     #oracle, #oracle *, #yfinanceTerminal, #yfinanceTerminal * {
         text-shadow: none !important;
     }
+
+    #links a {
+        font-size: 3.5rem;
+        color: blue;
+        text-shadow: white .1rem .1rem .1rem;
+    }
+
+    #links a:visited {
+        color: blueviolet;
+    }
+
+    #links {
+        background: linear-gradient(darkgray, whitesmoke);
+    }
 </style>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -156,19 +170,10 @@
             </div>
         </div>
     </header>
-    <section id="yfinanceTerminal">
-        <h2>Individual Stock Lookup 📈</h2>
-        <gradio-app src="https://dibend-individual-stock-lookup.hf.space"></gradio-app>
-        <h3><a href="https://huggingface.co/spaces/dibend/individual-stock-lookup">Source Code</a></h3>
-    </section>
-    <section id="oracle">
-        <h2>5 years in the future asset price predicting AI built with Google TensorFlow 2 🤖</h2>
-        <gradio-app src="https://dibend-oracleofnewprovidence.hf.space"></gradio-app>
-        <h3><a href="https://huggingface.co/spaces/dibend/OracleOfNewProvidence">Source Code</a></h3>
-    </section>
-    <section id="realEstate">
-        <h2>U.S. Residential Average Price Graph by Zip Code 🏠</h2>
-        <gradio-app src="https://dibend-us-residential-real-estate-average-price-by-zip.hf.space"></gradio-app>
+    <section id="links">
+        <a href="">Individual Stock Lookup 📈</a><br><br>
+        <a href="">5 years in the future asset price predicting AI built with Google TensorFlow 2 🤖</a><br><br>
+        <a href="">U.S. Residential Average Price Graph by Zip Code 🏠</a>
     </section>
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
@@ -179,7 +184,7 @@
                 <p>Contact <a href="mailto:David@NJWeb.Solutions">David@NJWeb.Solutions</a> to access premium investment research tools or have custom tools developed.</p>
                 <p>Our free research tools can be accessed from our <a href="https://github.com/dibend/Colab">GitHub Repo</a> and run free in Google Colab.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dhcKVOOiqoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <a id="colab" href="https://github.com/dibend/Colab"><button id="researchButton"><span id="tri">&#9654;</span>&nbsp;Try Our Investment Research Tools</button></a><br>
+                <a id="colab" href="https://github.com/dibend/Colab"><button id="researchButton"><br>
             </div>
         </div>
     </section>
