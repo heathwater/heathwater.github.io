@@ -149,6 +149,33 @@
         body {
             overflow-x: hidden;
         }
+
+        /* Custom Button Style */
+       .custom-button {
+            background-color: #2F4F4F; /* Darker slate gray to start */
+            color: #00FFFF; /* Aqua text color for consistency */
+            border: 2px solid #00FFFF; /* Aqua border */
+            font-size: 1.5rem; /* Adjust size as needed */
+            padding: 15px 30px; /* Generous padding for a larger touch area */
+            border-radius: 5px; /* Slightly rounded corners for a modern look */
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+            cursor: pointer; /* Clearly indicate clickable buttons */
+            text-shadow: 1px 1px 4px #000000; /* Text shadow for depth */
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Subtle glow effect */
+        }
+
+        .custom-button:hover, .custom-button:focus {
+            background-color: #008B8B; /* Slightly lighter on hover/focus for feedback */
+            color: #FFFFFF; /* White text for contrast */
+            border-color: #FFFFFF; /* White border */
+            transform: translateY(-2px); /* Lift effect */
+            box-shadow: 0 6px 12px rgba(0, 255, 255, 0.5); /* Enhanced glow effect on hover */
+        }
+
+        .custom-button:active {
+            transform: translateY(1px); /* Pushed effect on click */
+            box-shadow: 0 2px 4px rgba(0, 255, 255, 0.5); /* Subdued glow effect on click */
+        }
     </style>
 
 </head>
@@ -191,8 +218,9 @@
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
                         <h1 class="brand-heading">Heathwater Research</h1>
-                        <p id="intro" class="intro-text">Free and Premium Investment Research Tools</p>
-                        <a href="index.html#buttons" class="btn btn-circle page-scroll">
+                        <p id="intro" class="intro-text">Free and Premium Investment Research Tools</p><br><br>
+                        <a href="/Heathwater.apk" download><button class="custom-button">Download Android App</button></a><br><br>
+                        <a href="#buttons" class="btn btn-circle page-scroll">
                             <i class="fa fa-angle-double-down animated"></i>
                         </a>
                     </div>
