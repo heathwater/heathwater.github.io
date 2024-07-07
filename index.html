@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="David DiBenedetto">
 
-    <title>Heathwater Research</title>
+    <title>Heathwater Investment Research</title>
 
     <!-- Bootstrap Core CSS from CDN -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
@@ -163,7 +163,7 @@
             box-shadow: 0 2px 4px rgba(0, 255, 255, 0.5); /* Subdued glow effect on click */
         }
 
-        gradio-app {
+        .gradio-app {
             text-shadow: none !important;
         }
     </style>
@@ -214,19 +214,21 @@
         </div>
     </header>
     <hr>
-    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.31.5/gradio.js"></script>
+    <div id="gradio-app">
+        <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.31.5/gradio.js"></script>
 
-    <gradio-app src="https://dibend-ultimate-asset-analyzer.hf.space"></gradio-app>
+        <gradio-app src="https://dibend-ultimate-asset-analyzer.hf.space"></gradio-app>
 
-    <hr>
+        <hr>
 
-    <gradio-app src="https://dibend-us-residential-real-estate-average-price-by-zip.hf.space"></gradio-app>
+        <gradio-app src="https://dibend-us-residential-real-estate-average-price-by-zip.hf.space"></gradio-app>
 
-    <hr>
+        <hr>
 
-    <gradio-app src="https://dibend-real-estate-linear-regression.hf.space"></gradio-app>
+        <gradio-app src="https://dibend-real-estate-linear-regression.hf.space"></gradio-app>
 
-    <hr>
+        <hr>
+    </div>
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
