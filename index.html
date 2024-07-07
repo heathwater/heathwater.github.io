@@ -17,7 +17,8 @@
     <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
+        type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 
     <!-- Theme CSS -->
@@ -30,11 +31,11 @@
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
     <script type="text/javascript">
-    (function(c,l,a,r,i,t,y){
-        c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
-        t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
-        y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
-    })(window, document, "clarity", "script", "fh10qfjnyh");
+        (function (c, l, a, r, i, t, y) {
+            c[a] = c[a] || function () { (c[a].q = c[a].q || []).push(arguments) };
+            t = l.createElement(r); t.async = 1; t.src = "https://www.clarity.ms/tag/" + i;
+            y = l.getElementsByTagName(r)[0]; y.parentNode.insertBefore(t, y);
+        })(window, document, "clarity", "script", "fh10qfjnyh");
     </script>
 
     <style>
@@ -62,7 +63,7 @@
 
         @-webkit-keyframes blink-animation {
             to {
-              visibility: hidden;
+                visibility: hidden;
             }
         }
 
@@ -78,7 +79,8 @@
             background-color: darkgray;
         }
 
-        #researchButton, #buttons button {
+        #researchButton,
+        #buttons button {
             position: relative;
             background-color: darkslategray;
             color: aqua;
@@ -97,14 +99,15 @@
             transition: all .5s ease-in-out;
         }
 
-        #researchButton:hover, #buttons button:hover {
+        #researchButton:hover,
+        #buttons button:hover {
             background-color: aqua;
             color: darkslategray;
             border: solid black;
             text-shadow: .1rem .1rem .1rem whitesmoke;
         }
-            
-        
+
+
         @media only screen and (max-width: 600px) {
             #intro {
                 font-size: 3.5rem;
@@ -126,8 +129,13 @@
         }
 
         @keyframes animateHR {
-            0% {transform: translateX(-100%);}
-            100% {transform: translateX(100%);}
+            0% {
+                transform: translateX(-100%);
+            }
+
+            100% {
+                transform: translateX(100%);
+            }
         }
 
         body {
@@ -135,33 +143,75 @@
         }
 
         /* Custom Button Style */
-       .custom-button {
-            background-color: #2F4F4F; /* Darker slate gray to start */
-            color: #00FFFF; /* Aqua text color for consistency */
-            border: 2px solid #00FFFF; /* Aqua border */
-            font-size: 1.5rem; /* Adjust size as needed */
-            padding: 15px 30px; /* Generous padding for a larger touch area */
-            border-radius: 5px; /* Slightly rounded corners for a modern look */
+        .custom-button {
+            background-color: #2F4F4F;
+            /* Darker slate gray to start */
+            color: #00FFFF;
+            /* Aqua text color for consistency */
+            border: 2px solid #00FFFF;
+            /* Aqua border */
+            font-size: 1.5rem;
+            /* Adjust size as needed */
+            padding: 15px 30px;
+            /* Generous padding for a larger touch area */
+            border-radius: 5px;
+            /* Slightly rounded corners for a modern look */
             transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
-            cursor: pointer; /* Clearly indicate clickable buttons */
-            text-shadow: 1px 1px 4px #000000; /* Text shadow for depth */
-            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3); /* Subtle glow effect */
+            cursor: pointer;
+            /* Clearly indicate clickable buttons */
+            text-shadow: 1px 1px 4px #000000;
+            /* Text shadow for depth */
+            box-shadow: 0 4px 8px rgba(0, 255, 255, 0.3);
+            /* Subtle glow effect */
         }
 
-        .custom-button:hover, .custom-button:focus {
-            background-color: #008B8B; /* Slightly lighter on hover/focus for feedback */
-            color: #FFFFFF; /* White text for contrast */
-            border-color: #FFFFFF; /* White border */
-            transform: translateY(-2px); /* Lift effect */
-            box-shadow: 0 6px 12px rgba(0, 255, 255, 0.5); /* Enhanced glow effect on hover */
+        .custom-button:hover,
+        .custom-button:focus {
+            background-color: #008B8B;
+            /* Slightly lighter on hover/focus for feedback */
+            color: #FFFFFF;
+            /* White text for contrast */
+            border-color: #FFFFFF;
+            /* White border */
+            transform: translateY(-2px);
+            /* Lift effect */
+            box-shadow: 0 6px 12px rgba(0, 255, 255, 0.5);
+            /* Enhanced glow effect on hover */
         }
 
         .custom-button:active {
-            transform: translateY(1px); /* Pushed effect on click */
-            box-shadow: 0 2px 4px rgba(0, 255, 255, 0.5); /* Subdued glow effect on click */
+            transform: translateY(1px);
+            /* Pushed effect on click */
+            box-shadow: 0 2px 4px rgba(0, 255, 255, 0.5);
+            /* Subdued glow effect on click */
         }
 
-        .gradio-app *, .gradio-app *::before, .gradio-app *::after {
+        /* Ensure no text shadow for all text inside Gradio apps */
+        .gradio-app h1,
+        .gradio-app h2,
+        .gradio-app h3,
+        .gradio-app h4,
+        .gradio-app h5,
+        .gradio-app h6,
+        .gradio-app p,
+        .gradio-app span,
+        .gradio-app a,
+        .gradio-app li,
+        .gradio-app div,
+        .gradio-app button,
+        .gradio-app input,
+        .gradio-app select,
+        .gradio-app textarea,
+        .gradio-app label,
+        .gradio-app b,
+        .gradio-app strong,
+        .gradio-app em,
+        .gradio-app i,
+        .gradio-app pre,
+        .gradio-app code,
+        .gradio-app table,
+        .gradio-app th,
+        .gradio-app td {
             text-shadow: none !important;
         }
     </style>
@@ -232,20 +282,30 @@
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Heathwater Research</h2>
-                <p>Heathwater Research leverages the latest data science and artificial intelligence technologies to create quality investment research tools.</p>
-                <p>Contact <a href="/cdn-cgi/l/email-protection#3e7a5f48575a7e7074695b5c106d51524b4a5751504d"><span class="__cf_email__" data-cfemail="9adefbecf3fedad4d0cdfff8b4c9f5f6efeef3f5f4e9">[email&#160;protected]</span></a> to access premium investment research tools or have custom tools developed.</p>
-                <p>Our free research tools can be accessed from our <a href="https://github.com/dibend/Colab">GitHub Repo</a> and run free in Google Colab.</p>
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/dhcKVOOiqoM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <a id="colab" href="https://github.com/dibend/Colab"><button id="researchButton"><span id="tri">&#9654;</span>&nbsp;View Investment Research Tools</button></a><br>
+                <p>Heathwater Research leverages the latest data science and artificial intelligence technologies to
+                    create quality investment research tools.</p>
+                <p>Contact <a href="/cdn-cgi/l/email-protection#3e7a5f48575a7e7074695b5c106d51524b4a5751504d"><span
+                            class="__cf_email__"
+                            data-cfemail="9adefbecf3fedad4d0cdfff8b4c9f5f6efeef3f5f4e9">[email&#160;protected]</span></a>
+                    to access premium investment research tools or have custom tools developed.</p>
+                <p>Our free research tools can be accessed from our <a href="https://github.com/dibend/Colab">GitHub
+                        Repo</a> and run free in Google Colab.</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/dhcKVOOiqoM"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowfullscreen></iframe>
+                <a id="colab" href="https://github.com/dibend/Colab"><button id="researchButton"><span
+                            id="tri">&#9654;</span>&nbsp;View Investment Research Tools</button></a><br>
             </div>
         </div>
     </section>
     <hr>
     <section>
         <h4>Did you know: Heathwater.com is developed and maintained by an open-source developer?</h4>
-            <br>
-            Please consider helping us to build a better Heathwater.com for everyone!</h1>
-            <a href="https://github.com/sponsors/dibend"><button><span id="tri">&#9654;</span>&nbsp;Sponsor Developer</button></a>
+        <br>
+        Please consider helping us to build a better Heathwater.com for everyone!</h1>
+        <a href="https://github.com/sponsors/dibend"><button><span id="tri">&#9654;</span>&nbsp;Sponsor
+                Developer</button></a>
     </section>
 
     <!-- Footer -->
@@ -256,7 +316,8 @@
     </footer>
 
     <!-- jQuery from CDN -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript from CDN -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
