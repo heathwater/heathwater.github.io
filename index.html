@@ -217,60 +217,17 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading">Heathwater Research</h1>
-                        <p id="intro" class="intro-text">Free and Premium Investment Research Tools</p><br><br>
-                        <iframe width="560" height="315" src="https://www.youtube.com/embed/mESZPP69eUg?si=gAJqJXPmePAtb6P4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe><br><br>
-                        <a href="/Heathwater.apk" download><button class="custom-button">Download Android App&nbsp;&#8595;</button></a><br><br>
-                        <a href="#buttons" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
+                        <h1 class="brand-heading">Heathwater Investment Research</h1>
                     </div>
                 </div>
             </div>
         </div>
     </header>
     <hr>
-    <section id="forms">
-        <h2>Enter Email for Ultimate Asset Analyzer App Link</h2>
-        <form action="https://topsecret.blastalerts.com/predictor" method="post">
-            <div class="form-group">
-                <label for="email">Email address:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Submit</button>
-        </form>
-        <hr>
-        <h2>Get On-Demand Crypto Price Graphs</h2>
-        <form action="https://topsecret.blastalerts.com/crypto-price-graph-blast" method="post">
-            <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-                <label for="tickers">Crypto Tickers (comma-separated):</label>
-                <input type="text" class="form-control" id="tickers" name="tickers" placeholder="e.g., BTC,ETH,XRP" required>
-            </div>
-            <button type="submit" class="btn btn-primary">Request Graph</button>
-        </form>
-        <hr>
-	    <h2>Get On-Demand Real Estate Price Graphs and Data for any U.S. Zip Code (Source: Zillow)</h2>
-	    <form action="https://topsecret.blastalerts.com/re" method="post">
-	        <div class="form-group">
-                <label for="email">Your Email:</label>
-                <input type="email" class="form-control" id="email" name="email" required>
-                <label for="zip">Zip Code:</label>
-                <input type="text" class="form-control" id="zip" name="zip" placeholder="e.g. 07974" required>
-		    </div>
-            <button type="submit" class="btn btn-primary">Request Graph &amp; Data</button>
-        </form>
-    </section>
-    <hr>
-    <section id="buttons">
-        <a href="https://huggingface.co/spaces/dibend/OracleOfNewProvidence"><button><span id="tri">&#9654;</span>&nbsp;5 years in the future asset price predicting AI 🤖</button></a><br><br>
-        <a href="https://huggingface.co/spaces/dibend/US-Residential-Real-Estate-Average-Price-By-Zip"><button><span id="tri">&#9654;</span>&nbsp;U.S. Residential Average Price Graph by Zip Code 🏠</button></a><br><br>
-        <a href="https://huggingface.co/spaces/dibend/asset-price-linear-regression"><button><span id="tri">&#9654;</span>&nbsp;Asset Price Linear Regression Model 📈</button></a><br><br>
-        <a href="https://huggingface.co/spaces/dibend/real-estate-linear-regression"><button><span id="tri">&#9654;</span>&nbsp;U.S. Residential Average Price Linear Regression Model 🏘️</button></a><br><br>
-        <a href="https://huggingface.co/spaces/dibend/stock-dock"><button><span id="tri">&#9654;</span>&nbsp;Stock Price Candlestick Grapher with Dividends and Moving Averages 🕯️</button></a><br><br>
-        <a href="https://huggingface.co/spaces/dibend/RSI-MACD-Signals"><button><span id="tri">&#9654;</span>&nbsp;RSI & MACD Technical Analysis Signals 💱</button></a>
-    </section>
+    <script type="module" src="https://gradio.s3-us-west-2.amazonaws.com/4.31.5/gradio.js"></script>
+
+    <gradio-app src="https://dibend-ultimate-asset-analyzer.hf.space"></gradio-app>
+
     <hr>
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
@@ -287,7 +244,7 @@
     </section>
     <hr>
     <section>
-        <h4>Did you know: Heathwater.com is built with love entirely by volunteers. 👷</h4>
+        <h4>Did you know: Heathwater.com is developed and maintained by David DiBenedetto?</h4>
             <br>
             Please consider helping us to build a better Heathwater.com for everyone!</h1>
             <a href="https://github.com/sponsors/dibend"><button><span id="tri">&#9654;</span>&nbsp;Sponsor Developer</button></a>
