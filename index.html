@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
+    <meta name="description" content="Heathwater Investment Research">
     <meta name="author" content="David DiBenedetto">
     <link rel="manifest" href="manifest.json">
     <title>Heathwater Investment Research</title>
@@ -17,9 +17,8 @@
     <link href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" rel="stylesheet">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
@@ -41,6 +40,13 @@
     <style>
         h1 {
             text-shadow: 3px 3px 3px black;
+        }
+
+        .intro-text {
+            margin-top: 20px;
+            font-size: 1.5rem;
+            color: #FFFFFF;
+            text-shadow: 2px 2px 2px black;
         }
 
         span,
@@ -106,7 +112,6 @@
             border: solid black;
             text-shadow: .1rem .1rem .1rem whitesmoke;
         }
-
 
         @media only screen and (max-width: 600px) {
             #intro {
@@ -189,6 +194,30 @@
         gradio-app, gradio-app * {
             text-shadow: none !important;
         }
+
+        /* Scroll Down Arrow */
+        .scroll-down {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 2rem;
+            color: #00FFFF;
+            cursor: pointer;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateX(-50%) translateY(0);
+            }
+            40% {
+                transform: translateX(-50%) translateY(-10px);
+            }
+            60% {
+                transform: translateX(-50%) translateY(-5px);
+            }
+        }
     </style>
 
 </head>
@@ -218,13 +247,13 @@
                         <a href="#uaa" class="page-scroll">Ultimate Asset Analyzer</a>
                     </li>
                     <li>
-                        <a a href="#zip" class="page-scroll">U.S. Real Estate Zip Code Average Price Graph</a>
+                        <a href="#zip" class="page-scroll">U.S. Real Estate Zip Code Average Price Graph</a>
                     </li>
                     <li>
-                        <a class="page-scroll">U.S. Real Estate Zip Code Average Price Linear Regression Model</a>
+                        <a href="#lin" class="page-scroll">U.S. Real Estate Zip Code Average Price Linear Regression Model</a>
                     </li>
                     <li>
-                        <a href="#lin" class="page-scroll" href="index.html#about">About</a>
+                        <a href="index.html#about" class="page-scroll">About</a>
                     </li>
                     <li>
                         <a href="https://huggingface.co/dibend">More Web Apps</a>
@@ -241,8 +270,12 @@
         <div class="intro-body">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8 col-md-offset-2 text-center">
                         <h1 class="brand-heading">Heathwater Investment Research</h1>
+                        <p class="intro-text">Leverage the power of data science and AI for quality investment insights.</p>
+                        <a href="#main-content" class="scroll-down">
+                            <i class="fas fa-chevron-down"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -264,7 +297,7 @@
 
         <hr>
 
-        <a href="https://huggingface.co/dibend"><button><span id="tri">&#9654;</span>&nbsp;More Web Apps</button></a>
+        <a href="https://huggingface.co/dibend"><button class="custom-button"><span id="tri">&#9654;</span>&nbsp;More Web Apps</button></a>
     </div>
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
@@ -273,7 +306,7 @@
                 <h2>About Heathwater Research</h2>
                 <p>Heathwater Research leverages the latest data science and artificial intelligence technologies to
                     create quality investment research tools.</p>
-                <p>Contact <a href="mailto:david@njwebsolutions.net">David@NJWeb.Solutions</a>
+                <p>Contact <a href="mailto:david@njwebsolutions.net">David@NJwebsolutions.net</a>
                     to access premium investment research tools or have custom tools developed.</p>
                 <p>Our free research tools can be accessed from our <a href="https://github.com/dibend/Colab">GitHub
                         Repo</a> and run free in Google Colab.</p>
@@ -291,7 +324,7 @@
         <h4>Did you know: Heathwater.com is developed and maintained by an open-source developer?</h4>
         <br>
         Please consider helping us to build a better Heathwater.com for everyone!</h1>
-        <a href="https://github.com/sponsors/dibend"><button><span id="tri">&#9654;</span>&nbsp;Sponsor
+        <a href="https://github.com/sponsors/dibend"><button class="custom-button"><span id="tri">&#9654;</span>&nbsp;Sponsor
                 Developer</button></a>
     </section>
 
@@ -303,7 +336,6 @@
     </footer>
 
     <!-- jQuery from CDN -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
     <!-- Bootstrap Core JavaScript from CDN -->
