@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Heathwater Investment Research - Quality insights into investments and real estate.">
+    <meta name="description" content="Heathwater Investment Research - Unlock advanced insights with cutting-edge tools for investments, real estate, and bot development.">
     <meta name="author" content="David DiBenedetto">
     <title>Heathwater Investment Research Software</title>
 
@@ -27,7 +27,7 @@
     <!-- Theme CSS -->
     <link href="css/grayscale.min.css" rel="stylesheet">
 
-    <!-- Custom CSS for Animations -->
+    <!-- Custom CSS for Animations and Layouts -->
     <style>
         /* Header Text Shadow */
         h1 {
@@ -108,6 +108,15 @@
                 transform: translateX(100%);
             }
         }
+
+        /* Gradio iFrame Styling */
+        #gradio-app iframe {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            display: block;
+            aspect-ratio: 16 / 9;
+        }
     </style>
 
     <!-- JavaScript to enable lazy loading and smooth scroll -->
@@ -142,8 +151,8 @@
             <div class="collapse navbar-collapse navbar-right navbar-main-collapse">
                 <ul class="nav navbar-nav">
                     <li><a href="#uaa" class="page-scroll">Ultimate Asset Analyzer</a></li>
-                    <li><a href="#zip" class="page-scroll">U.S. Real Estate Zip Code Average Price Graph</a></li>
-                    <li><a href="#lin" class="page-scroll">U.S. Real Estate Linear Regression</a></li>
+                    <li><a href="#zip" class="page-scroll">U.S. Real Estate Insights</a></li>
+                    <li><a href="#bots" class="page-scroll">AI & Bot Development</a></li>
                     <li><a href="#about" class="page-scroll">About</a></li>
                     <li><a href="https://huggingface.co/dibend">More Web Apps</a></li>
                     <li><a href="https://feed.heathwater.com">Investing News Feed</a></li>
@@ -157,7 +166,7 @@
         <div class="intro-body">
             <div class="container text-center">
                 <h1 class="brand-heading">Heathwater Investment Research Software</h1>
-                <p class="intro-text">Leverage the power of software for quality investment insights.</p>
+                <p class="intro-text">Powerful data science tools and bots to fuel smarter investments.</p>
                 <a href="#uaa" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
             </div>
         </div>
@@ -172,23 +181,31 @@
             Need to analyze assets faster? Try: <a href="https://fastanalysis.heathwater.com" target="_blank">fast analysis here</a>
         </p>
         <hr>
-        <h3><a href="#zip">U.S. Real Estate Zip Code Average Price Graph (Data Source: Zillow)</a></h3>
+        <h3><a href="#zip">U.S. Real Estate Insights (Data Source: Zillow)</a></h3>
         <iframe id="zip" src="https://dibend-us-residential-real-estate-average-price-by-zip.hf.space" loading="lazy"></iframe>
         <hr>
-        <h3><a href="#lin">U.S. Real Estate Linear Regression Model (Data Source: Zillow)</a></h3>
-        <iframe id="lin" src="https://dibend-real-estate-linear-regression.hf.space" loading="lazy"></iframe>
-        <hr>
-        <a href="https://huggingface.co/dibend"><button class="custom-button"><span id="tri">&#9654;</span>&nbsp;More Web Apps</button></a>
     </div>
+
+    <!-- Bot Development Section -->
+    <section id="bots" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h2>AI & Bot Development</h2>
+                <p>Explore the latest in AI-driven automation with our custom bot development services. Whether it's real-time market monitoring, sentiment analysis, or automated responses, we empower you to stay a step ahead with bots that work seamlessly.</p>
+                <a href="mailto:david@njwebsolutions.net"><button class="custom-button">&#9654; Contact for Bot Development</button></a>
+            </div>
+        </div>
+    </section>
+    <hr>
 
     <!-- About Section -->
     <section id="about" class="container content-section text-center">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
                 <h2>About Heathwater Research</h2>
-                <p>Heathwater Research leverages data science and AI for quality investment research tools.</p>
-                <p>Contact <a href="mailto:david@njwebsolutions.net">David@NJwebsolutions.net</a> for premium tools or custom solutions.</p>
-                <p>Access our free tools on <a href="https://github.com/dibend/Colab">GitHub</a> and run in Google Colab.</p>
+                <p>Heathwater Research combines the latest in data science, AI, and financial modeling to deliver actionable insights for savvy investors.</p>
+                <p>Contact <a href="mailto:david@njwebsolutions.net">David@NJwebsolutions.net</a> for premium tools, bot development, or custom solutions.</p>
+                <p>Access our free tools on <a href="https://github.com/dibend/Colab">GitHub</a> and run them in Google Colab for convenient and powerful analysis.</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/dhcKVOOiqoM" loading="lazy" title="Investment Research Video"></iframe>
                 <a href="https://github.com/dibend/Colab"><button class="custom-button">&#9654; View Investment Research Tools</button></a>
             </div>
@@ -198,7 +215,7 @@
 
     <!-- Sponsorship Section -->
     <section>
-        <h4>Did you know: Heathwater.com is developed by an open-source developer?</h4>
+        <h4>Did you know? Heathwater.com is developed and maintained by an open-source developer!</h4>
         <a href="https://github.com/sponsors/dibend"><button class="custom-button">&#9654; Sponsor Developer</button></a>
     </section>
 
